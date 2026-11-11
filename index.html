@@ -111,8 +111,8 @@
       position: absolute;
       left: 50%;
       bottom: 16vh;
-      width: min(26vw, 260px);
-      height: min(26vw, 260px);
+      width: min(39vw, 390px);
+      height: min(39vw, 390px);
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       animation: rise 16s ease-in-out infinite alternate;
@@ -121,17 +121,35 @@
     }
     .sun-corona {
       position: absolute;
-      inset: -42%;
+      inset: -62%;
       border-radius: 50%;
       background:
         radial-gradient(circle at 50% 48%,
-          color-mix(in srgb, var(--gold) 42%, transparent) 0%,
-          color-mix(in srgb, var(--accent-glow) 38%, transparent) 22%,
-          color-mix(in srgb, var(--accent-glow) 16%, transparent) 42%,
-          color-mix(in srgb, var(--gold) 6%, transparent) 58%,
-          transparent 72%);
-      opacity: 0.9;
+          color-mix(in srgb, var(--gold) 50%, transparent) 0%,
+          color-mix(in srgb, var(--accent-glow) 44%, transparent) 20%,
+          color-mix(in srgb, var(--accent-glow) 22%, transparent) 38%,
+          color-mix(in srgb, var(--gold) 10%, transparent) 54%,
+          transparent 70%);
+      opacity: 0.95;
       animation: corona-breathe 9s ease-in-out infinite alternate;
+    }
+    .sun-rays {
+      position: absolute;
+      inset: -48%;
+      border-radius: 50%;
+      background:
+        repeating-conic-gradient(from 0deg at 50% 50%,
+          transparent 0deg,
+          color-mix(in srgb, var(--gold) 26%, transparent) 5deg,
+          transparent 10deg,
+          transparent 15deg,
+          color-mix(in srgb, var(--cream) 14%, transparent) 18deg,
+          transparent 21deg,
+          transparent 24deg);
+      -webkit-mask-image: radial-gradient(circle at 50% 50%, transparent 30%, #000 38%, transparent 70%);
+      mask-image: radial-gradient(circle at 50% 50%, transparent 30%, #000 38%, transparent 70%);
+      opacity: 0.7;
+      animation: ring-spin 120s linear infinite;
     }
     .sun-halo {
       position: absolute;
@@ -283,6 +301,7 @@
     @media (prefers-reduced-motion: reduce) {
       .sun,
       .sun-corona,
+      .sun-rays,
       .sun-halo,
       .sun-core,
       .sun-sheen,
@@ -1585,6 +1604,7 @@
     <div class="sky-veil"></div>
     <div class="sun">
       <div class="sun-corona"></div>
+      <div class="sun-rays"></div>
       <div class="sun-halo"></div>
       <div class="sun-core"><div class="sun-sheen"></div></div>
       <div class="sun-ring"></div>
