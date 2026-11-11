@@ -866,103 +866,178 @@ window.SETS = [
     ]
   },
   {
-    "id": "carlcox",
-    "artist": "Carl Cox",
-    "place": "Boiler Room · Ibiza Villa Takeovers",
-    "mood": "Tech house Ibiza et classics dancefloor",
-    "accent": "#E8E8E8",
-    "file": "videos/Carl Cox Boiler Room Ibiza Villa Takeovers DJ Set.mp4",
-    "source": "livetracklist / 1001tracklists (https://www.youtube.com/watch?v=vy-k0FopsmY)",
+    "id": "moniquetl",
+    "artist": "Miss Monique",
+    "place": "Tomorrowland 2025 · Freedom Stage · WE2",
+    "mood": "Melodic techno, peak-time",
+    "accent": "#2EE66A",
+    "file": "videos/Miss Monique WE2 ｜ Tomorrowland 2025.mp4",
+    "source": "1001tracklists / mixinout (https://www.youtube.com/watch?v=DdgyifI5k9o)",
     "tracks": [
       {
-        "at": "0:00",
-        "seconds": 0,
-        "artist": "X-Press 2 ft. James Yuill",
-        "title": "Muzik Xpress",
+        "at": "0:15",
+        "seconds": 15,
+        "artist": "TH;EN & SLVR",
+        "title": "Gangs",
         "layers": []
       },
       {
-        "at": "1:16",
-        "seconds": 76,
-        "artist": "Chez Damier",
-        "title": "Can You Feel It (Steve Bug Re-Dub)",
+        "at": "2:08",
+        "seconds": 128,
+        "artist": "UTOPIA (RS) & Greenjack",
+        "title": "Enigma",
         "layers": []
       },
       {
-        "at": "5:14",
-        "seconds": 314,
-        "artist": "Sergio Fernandez",
-        "title": "Carioca",
+        "at": "5:53",
+        "seconds": 353,
+        "artist": "Miss Monique, GENESI & Carl Bee",
+        "title": "Nomacita",
         "layers": []
       },
       {
-        "at": "7:07",
-        "seconds": 427,
-        "artist": "Elio Riso",
-        "title": "Pain In The Ass",
+        "at": "9:39",
+        "seconds": 579,
+        "artist": "Miss Monique ft. Poppy Baskcomb",
+        "title": "Rain",
         "layers": []
       },
       {
-        "at": "11:42",
-        "seconds": 702,
-        "artist": "Round Table Knights & Bauchamp",
-        "title": "Calypso",
+        "at": "13:53",
+        "seconds": 833,
+        "artist": "SCRIPT",
+        "title": "WTF",
         "layers": []
       },
       {
-        "at": "16:15",
-        "seconds": 975,
-        "artist": "Joe Brunning",
-        "title": "Positive Vibes",
+        "at": "17:42",
+        "seconds": 1062,
+        "artist": "Miss Monique",
+        "title": "Magnet",
         "layers": []
       },
       {
-        "at": "19:49",
-        "seconds": 1189,
-        "artist": "The Rivera Project",
-        "title": "Puerto Rico Vibe (Robbie Rivera Original Mix)",
+        "at": "22:01",
+        "seconds": 1321,
+        "artist": "Kiko",
+        "title": "Bak Bak",
         "layers": []
       },
       {
-        "at": "23:00",
-        "seconds": 1380,
-        "artist": "Jim Rivers",
-        "title": "We Can Do This All Night",
+        "at": "26:30",
+        "seconds": 1590,
+        "artist": "KASIA & Charles D ft. Sarah de Warren",
+        "title": "Psycho",
         "layers": []
       },
       {
-        "at": "25:06",
-        "seconds": 1506,
-        "artist": "Trevor Rockcliffe",
-        "title": "Jumping (Deep House Mix)",
+        "at": "30:27",
+        "seconds": 1827,
+        "artist": "TouchTalk",
+        "title": "Change It (Westend Edit)",
         "layers": []
       },
       {
-        "at": "29:43",
-        "seconds": 1783,
-        "artist": "Stefano Frisoni",
-        "title": "El Nino Loco (Turkana Remix)",
+        "at": "33:51",
+        "seconds": 2031,
+        "artist": "Yeah Yeah Yeahs",
+        "title": "Heads Will Roll (Massano & Matt Guy Remix)",
         "layers": []
       },
       {
-        "at": "31:31",
-        "seconds": 1891,
-        "artist": "New Order",
-        "title": "Blue Monday",
+        "at": "37:34",
+        "seconds": 2254,
+        "artist": "Miss Monique",
+        "title": "Look At You",
+        "layers": [
+          {
+            "artist": "Warp Brothers vs. Aquagen",
+            "title": "Phatt Bass"
+          }
+        ]
+      },
+      {
+        "at": "41:30",
+        "seconds": 2490,
+        "artist": "Mau P",
+        "title": "MERTHER (JustLuke Edit)",
         "layers": []
       },
       {
-        "at": "35:32",
-        "seconds": 2132,
-        "artist": "Chris Montana vs. Denis The Menace",
-        "title": "Spanish Hustle (Chris Moody Remix)",
+        "at": "44:53",
+        "seconds": 2693,
+        "artist": "Max Styler & Three Drives",
+        "title": "Greece 2000 (Max Styler Rework)",
         "layers": []
       },
       {
-        "at": "40:50",
-        "seconds": 2450,
-        "artist": "CeCe Peniston ft. Joyriders",
-        "title": "Finally",
+        "at": "48:01",
+        "seconds": 2881,
+        "artist": "Enrico Sangiuliano",
+        "title": "The Techno Code (Kevin de Vries & SLVR Remix)",
+        "layers": []
+      },
+      {
+        "at": "52:04",
+        "seconds": 3124,
+        "artist": "ID",
+        "title": "ID",
+        "layers": []
+      },
+      {
+        "at": "56:01",
+        "seconds": 3361,
+        "artist": "Argy & MEDUZA ft. PollyAnna",
+        "title": "Melodia",
+        "layers": []
+      },
+      {
+        "at": "1:00:16",
+        "seconds": 3616,
+        "artist": "Miss Monique & Glowal",
+        "title": "Lost On A Dancefloor",
+        "layers": []
+      },
+      {
+        "at": "1:04:18",
+        "seconds": 3858,
+        "artist": "Gotye ft. Kimbra",
+        "title": "Somebody That I Used To Know (ARTBAT Remix)",
+        "layers": []
+      },
+      {
+        "at": "1:09:01",
+        "seconds": 4141,
+        "artist": "Layton Giordani ft. LINNEY & Sarah de Warren",
+        "title": "Act Of God (CamelPhat Remix)",
+        "layers": []
+      },
+      {
+        "at": "1:13:31",
+        "seconds": 4411,
+        "artist": "SKIY",
+        "title": "Disco",
+        "layers": []
+      },
+      {
+        "at": "1:16:52",
+        "seconds": 4612,
+        "artist": "Adam Beyer",
+        "title": "Taking Back Control",
+        "layers": []
+      },
+      {
+        "at": "1:20:47",
+        "seconds": 4847,
+        "artist": "PARAFRAME",
+        "title": "Rose",
+        "layers": []
+      },
+      {
+        "at": "1:25:01",
+        "seconds": 5101,
+        "artist": "Miss Monique & HRRTZ ft. Jantine",
+        "title": "Is Anyone There?",
         "layers": []
       }
     ]
@@ -1861,6 +1936,157 @@ window.SETS = [
         "seconds": 6919,
         "artist": "Porra",
         "title": "See You",
+        "layers": []
+      }
+    ]
+  },
+  {
+    "id": "moniquemain",
+    "artist": "Miss Monique",
+    "place": "Tomorrowland 2026 · Mainstage · WE2",
+    "mood": "Melodic techno, mainstage",
+    "accent": "#E3B23C",
+    "file": "videos/Miss Monique - Live at Tomorrowland MAINSTAGE 2026.mp4",
+    "source": "1001tracklists (https://www.youtube.com/watch?v=-mdPT-oA3U4)",
+    "tracks": [
+      {
+        "at": "0:12",
+        "seconds": 12,
+        "artist": "Agents Of Time & Miss Monique",
+        "title": "Rajada",
+        "layers": []
+      },
+      {
+        "at": "2:00",
+        "seconds": 120,
+        "artist": "Miss Monique & Glowal",
+        "title": "Rollin'",
+        "layers": []
+      },
+      {
+        "at": "5:32",
+        "seconds": 332,
+        "artist": "HUGEL & SOLTO",
+        "title": "Jamaican (Bam Bam) (Jast Remix)",
+        "layers": []
+      },
+      {
+        "at": "8:15",
+        "seconds": 495,
+        "artist": "Miss Monique & Kapuchon & GLZ",
+        "title": "Hot Sauce",
+        "layers": []
+      },
+      {
+        "at": "12:17",
+        "seconds": 737,
+        "artist": "KENZ",
+        "title": "Blade",
+        "layers": []
+      },
+      {
+        "at": "15:20",
+        "seconds": 920,
+        "artist": "Dimitri Vegas & Bountyhunter & BRANDON",
+        "title": "Woops",
+        "layers": []
+      },
+      {
+        "at": "18:05",
+        "seconds": 1085,
+        "artist": "Cafius & Oliver Marshak",
+        "title": "The Beat",
+        "layers": []
+      },
+      {
+        "at": "21:38",
+        "seconds": 1298,
+        "artist": "Miss Monique & P.O.U ft. Susie Ledge",
+        "title": "Million Miles Away (Miss Monique VIP Remix)",
+        "layers": []
+      },
+      {
+        "at": "24:56",
+        "seconds": 1496,
+        "artist": "Addie Manson",
+        "title": "Acid Love",
+        "layers": []
+      },
+      {
+        "at": "27:59",
+        "seconds": 1679,
+        "artist": "Kevin de Vries & Platero",
+        "title": "Man Like Me",
+        "layers": []
+      },
+      {
+        "at": "31:08",
+        "seconds": 1868,
+        "artist": "David Guetta & Joachim Garraud ft. JD Davis",
+        "title": "The World Is Mine (SLVR Remix)",
+        "layers": []
+      },
+      {
+        "at": "33:53",
+        "seconds": 2033,
+        "artist": "19:26 & Bittermind",
+        "title": "The Elevator",
+        "layers": []
+      },
+      {
+        "at": "36:19",
+        "seconds": 2179,
+        "artist": "Miss Monique & GENESI & Carl Bee",
+        "title": "Nomacita",
+        "layers": []
+      },
+      {
+        "at": "39:39",
+        "seconds": 2379,
+        "artist": "Miss Monique & Henri Bergmann & Mario Eighta",
+        "title": "17",
+        "layers": []
+      },
+      {
+        "at": "43:09",
+        "seconds": 2589,
+        "artist": "ARTBAT ft. John Martin",
+        "title": "Coming Home",
+        "layers": []
+      },
+      {
+        "at": "44:34",
+        "seconds": 2674,
+        "artist": "KASIA & Ayla",
+        "title": "Ayla",
+        "layers": []
+      },
+      {
+        "at": "47:01",
+        "seconds": 2821,
+        "artist": "Anyma & Stylo",
+        "title": "No Good",
+        "layers": []
+      },
+      {
+        "at": "49:03",
+        "seconds": 2943,
+        "artist": "Argy & Omnya",
+        "title": "Aria (Omiki Remix)",
+        "layers": []
+      },
+      {
+        "at": "51:09",
+        "seconds": 3069,
+        "artist": "Miss Monique & Volkoder",
+        "title": "Girls On The Floor",
+        "layers": []
+      },
+      {
+        "at": "54:16",
+        "seconds": 3256,
+        "artist": "Robbie Williams & Miss Monique",
+        "title": "Beauty In Us",
         "layers": []
       }
     ]

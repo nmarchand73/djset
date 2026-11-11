@@ -120,6 +120,12 @@ window.BIOS = {
     ],
     sets: [
       {
+        title: "Tomorrowland 2026 · Mainstage · WE2",
+        year: "2026",
+        note: "Horizon · retour Mainstage",
+        url: "https://www.youtube.com/watch?v=-mdPT-oA3U4"
+      },
+      {
         title: "Cercle · Biosphère · Montréal",
         year: "2022",
         note: "Set phare Cercle",
@@ -128,7 +134,7 @@ window.BIOS = {
       {
         title: "Tomorrowland 2025 · Freedom · WE2",
         year: "2025",
-        note: "Official Tomorrowland",
+        note: "Horizon · Freedom Stage",
         url: "https://www.youtube.com/watch?v=DdgyifI5k9o"
       },
       {
@@ -293,7 +299,7 @@ window.BIOS = {
       {
         title: "Boiler Room · Ibiza Villa Takeovers",
         year: "2013",
-        note: "Horizon",
+        note: "Villa Takeovers",
         url: "https://www.youtube.com/watch?v=vy-k0FopsmY"
       },
       {
@@ -316,6 +322,8 @@ window.BIOS = {
       }
     ]
   },
+  moniquetl: { aliasOf: "monique" },
+  moniquemain: { aliasOf: "monique" },
   fact1: { aliasOf: "carlcox" },
   fact2: { aliasOf: "carlcox" },
 
