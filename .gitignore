@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Media — too large for git (~17 GB of video, ~1.6 GB of audio)
+videos/
+audio/
+
+# yt-dlp leftovers (partial downloads and format fragments)
+*.part
+*.ytdl
+*.f[0-9]*.mp4
+*.f[0-9]*.m4a
+*.f[0-9]*.webm
+*.temp.*
+
+# Sensitive: YouTube session cookies, plus extract logs
+private/
