@@ -340,6 +340,72 @@
       text-transform: uppercase;
       transition: color .35s ease;
     }
+    .header-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    .logo3d {
+      width: 1em;
+      height: 1em;
+      font-size: 52px;
+      flex: none;
+      perspective: 3.2em;
+      pointer-events: none;
+    }
+    .logo3d-body {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: rotateX(14deg) rotateY(-26deg);
+      animation: logo3d-sway 9s ease-in-out infinite alternate;
+    }
+    .logo3d-layer {
+      position: absolute;
+      inset: 0;
+      transform: translateZ(calc(var(--z) * 0.035em));
+    }
+    .logo3d-sun {
+      position: absolute;
+      left: 0.2em;
+      top: 0.2em;
+      width: 0.6em;
+      height: 0.3em;
+      border-radius: 0.3em 0.3em 0 0;
+      background: color-mix(in srgb, var(--accent) 55%, var(--ink));
+    }
+    .logo3d-line {
+      position: absolute;
+      left: 0.06em;
+      right: 0.06em;
+      top: 0.56em;
+      height: 0.07em;
+      border-radius: 0.035em;
+      background: color-mix(in srgb, var(--horizon) 60%, var(--ink));
+    }
+    .logo3d-line.is-low {
+      left: 0.26em;
+      right: 0.26em;
+      top: 0.72em;
+      height: 0.045em;
+    }
+    .logo3d-layer.is-front .logo3d-sun {
+      background: linear-gradient(180deg, var(--accent-soft), var(--accent));
+      box-shadow: 0 0 0.24em var(--accent-glow);
+    }
+    .logo3d-layer.is-front .logo3d-line {
+      background: linear-gradient(90deg, transparent, var(--accent-soft) 30%, var(--accent-soft) 70%, transparent);
+      box-shadow: 0 0 0.16em var(--horizon);
+    }
+    .logo3d-layer.is-front .logo3d-line.is-low {
+      background: color-mix(in srgb, var(--accent) 70%, transparent);
+    }
+    @keyframes logo3d-sway {
+      from { transform: rotateX(18deg) rotateY(-34deg); }
+      to { transform: rotateX(6deg) rotateY(34deg); }
+    }
 
     .sets {
       display: grid;
@@ -1494,9 +1560,11 @@
       .stage { grid-template-columns: 1fr; }
       aside { position: static; max-height: none; }
       .place-clock { display: none; }
+      .header-side { align-self: flex-start; }
     }
     @media (max-width: 640px) {
       .sets { grid-template-columns: 1fr; }
+      .logo3d { font-size: 40px; }
       .page { padding-inline: 14px; }
       .spectrum-row { grid-template-columns: 1fr; }
       .vu-row { grid-template-columns: 1fr; }
@@ -1505,7 +1573,8 @@
       .scope { padding: 14px; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .scope-title::before { animation: none; }
+      .scope-title::before,
+      .logo3d-body { animation: none; }
     }
   </style>
 </head>
@@ -1530,7 +1599,18 @@
         <p class="mark" id="mark">Ibiza · après le soleil</p>
         <h1 class="site">Hori<em>zon</em></h1>
       </div>
-      <div class="place-clock" id="clock">Quatre sets</div>
+      <div class="header-side">
+        <div class="logo3d" aria-hidden="true">
+          <div class="logo3d-body">
+            <div class="logo3d-layer" style="--z: -3"><span class="logo3d-sun"></span><span class="logo3d-line"></span><span class="logo3d-line is-low"></span></div>
+            <div class="logo3d-layer" style="--z: -2"><span class="logo3d-sun"></span><span class="logo3d-line"></span><span class="logo3d-line is-low"></span></div>
+            <div class="logo3d-layer" style="--z: -1"><span class="logo3d-sun"></span><span class="logo3d-line"></span><span class="logo3d-line is-low"></span></div>
+            <div class="logo3d-layer" style="--z: 0"><span class="logo3d-sun"></span><span class="logo3d-line"></span><span class="logo3d-line is-low"></span></div>
+            <div class="logo3d-layer is-front" style="--z: 1"><span class="logo3d-sun"></span><span class="logo3d-line"></span><span class="logo3d-line is-low"></span></div>
+          </div>
+        </div>
+        <div class="place-clock" id="clock">Quatre sets</div>
+      </div>
     </header>
 
     <div class="sets" id="sets" role="list"></div>
