@@ -568,6 +568,22 @@
       transition: border-radius .35s ease, box-shadow .35s ease;
     }
     video { width: 100%; display: block; background: var(--ink); }
+    .yt-host {
+      display: none;
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: var(--ink);
+    }
+    .frame.is-youtube .yt-host { display: block; }
+    .frame.is-youtube .plyr { display: none !important; }
+    .yt-host iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
     .plyr { border-radius: var(--radius); }
     .plyr__video-wrapper { background: var(--ink); }
     .plyr--video .plyr__controls {
@@ -1726,6 +1742,9 @@
       <div class="player-col">
         <div class="frame">
           <video id="player" playsinline controls preload="metadata" crossorigin="anonymous"></video>
+          <div class="yt-host" id="ytHost" aria-label="Lecteur YouTube">
+            <div id="ytMount"></div>
+          </div>
           <div class="live-badge" id="badge">
             <span class="dot"></span>
             <span id="badgeText">Choisis un set</span>
@@ -1880,10 +1899,10 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
-  <script src="sets.js?v=60"></script>
-  <script src="themes.js?v=60"></script>
-  <script src="bios.js?v=60"></script>
-  <script src="analyser.js?v=60"></script>
+  <script src="sets.js?v=61"></script>
+  <script src="themes.js?v=61"></script>
+  <script src="bios.js?v=61"></script>
+  <script src="analyser.js?v=61"></script>
   <script>
     const video = document.getElementById("player");
     const setsEl = document.getElementById("sets");
@@ -2229,11 +2248,121 @@
         origin: window.location.protocol === "file:" ? undefined : window.location.origin,
       },
     });
-    player.elements.container.appendChild(document.getElementById("badge"));
+    // Keep the now-playing badge on .frame so it overlays both Plyr and native YouTube.
+    if (frameEl) frameEl.appendChild(document.getElementById("badge"));
     if (player.media && player.media.crossOrigin == null) {
       try { player.media.crossOrigin = "anonymous"; } catch (err) { /* ignore */ }
     }
     if (window.HorizonAnalyser) window.HorizonAnalyser.attach(player.media);
+
+    let ytApi = null;
+    let ytPlayer = null;
+    let ytPoll = null;
+
+    function ensureYtApi() {
+      if (ytApi || (window.YT && window.YT.Player)) {
+        ytApi = window.YT;
+        return Promise.resolve(ytApi);
+      }
+      return new Promise(function (resolve) {
+        const prev = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function () {
+          if (typeof prev === "function") prev();
+          ytApi = window.YT;
+          resolve(ytApi);
+        };
+        if (!document.getElementById("yt-iframe-api")) {
+          const script = document.createElement("script");
+          script.id = "yt-iframe-api";
+          script.src = "https://www.youtube.com/iframe_api";
+          document.head.appendChild(script);
+        }
+      });
+    }
+
+    function stopYtPoll() {
+      if (ytPoll) {
+        clearInterval(ytPoll);
+        ytPoll = null;
+      }
+    }
+
+    function startYtPoll() {
+      if (ytPoll) return;
+      ytPoll = setInterval(function () {
+        if (!current || !current.usingYoutube || !ytPlayer || typeof ytPlayer.getCurrentTime !== "function") return;
+        const time = ytPlayer.getCurrentTime() || 0;
+        render(time);
+        const now = Date.now();
+        if (now - lastSave > 2000 && time > 1) {
+          lastSave = now;
+          localStorage.setItem("horizon-resume", JSON.stringify({ id: current.id, time: time }));
+        }
+      }, 400);
+    }
+
+    function setFrameMode(mode) {
+      if (!frameEl) return;
+      frameEl.classList.toggle("is-youtube", mode === "youtube");
+      frameEl.classList.toggle("is-file", mode === "file");
+      if (mode === "youtube") {
+        try { player.pause(); } catch (err) { /* ignore */ }
+      } else {
+        stopYtPoll();
+        if (ytPlayer && typeof ytPlayer.pauseVideo === "function") {
+          try { ytPlayer.pauseVideo(); } catch (err) { /* ignore */ }
+        }
+      }
+    }
+
+    function mountYoutube(videoId, seekSeconds) {
+      const startAt = Math.max(0, Math.floor(Number(seekSeconds) || 0));
+      setFrameMode("youtube");
+      return ensureYtApi().then(function (YT) {
+        if (ytPlayer && typeof ytPlayer.loadVideoById === "function") {
+          ytPlayer.loadVideoById({ videoId: videoId, startSeconds: startAt });
+          startYtPoll();
+          return;
+        }
+        const host = document.getElementById("ytHost");
+        host.innerHTML = "";
+        const mount = document.createElement("div");
+        mount.id = "ytMount";
+        host.appendChild(mount);
+        const playerVars = {
+          autoplay: 1,
+          rel: 0,
+          modestbranding: 1,
+          playsinline: 1,
+          start: startAt
+        };
+        if (window.location.protocol !== "file:") {
+          playerVars.origin = window.location.origin;
+        }
+        ytPlayer = new YT.Player("ytMount", {
+          videoId: videoId,
+          width: "100%",
+          height: "100%",
+          playerVars: playerVars,
+          events: {
+            onReady: function (ev) {
+              if (pendingSeek != null && ev.target && typeof ev.target.seekTo === "function") {
+                ev.target.seekTo(pendingSeek, true);
+                render(pendingSeek);
+                pendingSeek = null;
+              }
+              startYtPoll();
+            },
+            onStateChange: function (ev) {
+              if (!current || !current.usingYoutube) return;
+              const time = typeof ev.target.getCurrentTime === "function" ? ev.target.getCurrentTime() : 0;
+              render(time || 0);
+              if (ev.data === YT.PlayerState.PLAYING) startYtPoll();
+            }
+          }
+        });
+      });
+    }
 
     // Dans Signal plein écran : bloquer le FS vidéo (bouton masqué + double-clic).
     document.addEventListener("click", function (ev) {
@@ -2545,7 +2674,7 @@
         }
         meter.style.width = "0%";
       } else {
-        kicker.textContent = player.media.paused ? "En pause" : "En lecture";
+        kicker.textContent = isPlaybackPaused() ? "En pause" : "En lecture";
         nowArtist.textContent = track.artist || current.artist;
         nowTitle.textContent = track.title;
         syncScopeNow(track.artist || current.artist, track.title);
@@ -2569,7 +2698,7 @@
         } else {
           nextEl.textContent = "Dernier moment du set";
         }
-        const end = next ? next.seconds : (Number.isFinite(player.duration) ? player.duration : track.seconds + 1);
+        const end = next ? next.seconds : playbackDuration(track.seconds + 1);
         const span = Math.max(1, end - track.seconds);
         const ratio = Math.min(1, Math.max(0, (time - track.seconds) / span));
         meter.style.width = (ratio * 100).toFixed(1) + "%";
@@ -2595,6 +2724,30 @@
       }
     }
 
+    function isPlaybackPaused() {
+      if (current && current.usingYoutube && ytPlayer && typeof ytPlayer.getPlayerState === "function" && window.YT) {
+        return ytPlayer.getPlayerState() !== YT.PlayerState.PLAYING;
+      }
+      return !!(player.media && player.media.paused);
+    }
+
+    function playbackDuration(fallback) {
+      if (current && current.usingYoutube && ytPlayer && typeof ytPlayer.getDuration === "function") {
+        const d = ytPlayer.getDuration();
+        if (Number.isFinite(d) && d > 0) return d;
+      }
+      if (Number.isFinite(player.duration) && player.duration > 0) return player.duration;
+      return fallback;
+    }
+
+    function playCurrent() {
+      if (current && current.usingYoutube && ytPlayer && typeof ytPlayer.playVideo === "function") {
+        ytPlayer.playVideo();
+        return;
+      }
+      player.play();
+    }
+
     function showResume(id) {
       const time = savedTime(id);
       if (time > 8) {
@@ -2602,7 +2755,7 @@
         resumeBtn.textContent = "Reprendre à " + fmt(time);
         resumeBtn.onclick = function () {
           seekTo(time);
-          player.play();
+          playCurrent();
           resumeBtn.hidden = true;
         };
       } else {
@@ -2680,13 +2833,9 @@
         } else {
           clock.textContent = set.mood + " · YouTube";
         }
-        player.source = {
-          type: "video",
-          title: set.artist + " · " + set.place,
-          sources: [{ src: ytId, provider: "youtube" }],
-        };
-        setTimeout(function () { patchYoutubeIframes(player.elements.container); }, 0);
+        mountYoutube(ytId, seek || 0);
       } else if (set.file) {
+        setFrameMode("file");
         // Keep MediaElementSource on the same <video>; only pause drawing until playing.
         if (window.HorizonAnalyser) window.HorizonAnalyser.stop();
         const mediaEl = player.media;
@@ -2707,6 +2856,16 @@
     function seekTo(seconds) {
       const target = Math.max(0, Number(seconds) || 0);
       pendingSeek = target;
+      if (current && current.usingYoutube) {
+        if (ytPlayer && typeof ytPlayer.seekTo === "function") {
+          try {
+            ytPlayer.seekTo(target, true);
+            pendingSeek = null;
+            render(target);
+          } catch (err) { /* keep pending until onReady */ }
+        }
+        return;
+      }
       function applySeek() {
         try {
           player.currentTime = target;
@@ -2717,17 +2876,11 @@
           return false;
         }
       }
-      // YouTube/Plyr: the bare <video> readyState stays 0 — use the Plyr API directly.
-      if (current && current.usingYoutube) {
-        if (!applySeek() && player.ready) {
-          player.ready.then(function () { applySeek(); }).catch(function () { /* keep pending */ });
-        }
-        return;
-      }
       if (video.readyState >= 1) applySeek();
     }
 
     player.on("loadedmetadata", function () {
+      if (current && current.usingYoutube) return;
       if (pendingSeek != null) {
         player.currentTime = pendingSeek;
         render(pendingSeek);
@@ -2735,9 +2888,12 @@
       }
       syncAnalyser();
     });
-    player.on("loadeddata", function () { syncAnalyser(); });
+    player.on("loadeddata", function () {
+      if (current && current.usingYoutube) return;
+      syncAnalyser();
+    });
     player.on("timeupdate", function () {
-      if (!current) return;
+      if (!current || current.usingYoutube) return;
       const time = player.currentTime || 0;
       render(time);
       const now = Date.now();
@@ -2747,24 +2903,29 @@
       }
     });
     player.on("play", function () {
-      if (current) render(player.currentTime || 0);
+      if (!current || current.usingYoutube) return;
+      render(player.currentTime || 0);
       syncAnalyser();
     });
     player.on("playing", function () {
-      if (current) render(player.currentTime || 0);
+      if (!current || current.usingYoutube) return;
+      render(player.currentTime || 0);
       syncAnalyser();
     });
     player.on("pause", function () {
-      if (current) render(player.currentTime || 0);
+      if (!current || current.usingYoutube) return;
+      render(player.currentTime || 0);
       if (window.HorizonAnalyser) window.HorizonAnalyser.pause();
     });
     player.on("ended", function () {
+      if (current && current.usingYoutube) return;
       if (window.HorizonAnalyser) window.HorizonAnalyser.pause();
     });
     player.on("seeked", function () {
-      if (current) render(player.currentTime || 0);
+      if (!current || current.usingYoutube) return;
+      render(player.currentTime || 0);
       // Seek / changement de titre dans le même set : garder l’analyseur vivant.
-      if (current && !current.usingYoutube && !player.paused && window.HorizonAnalyser) {
+      if (!player.paused && window.HorizonAnalyser) {
         window.HorizonAnalyser.start();
       }
     });
