@@ -1880,10 +1880,10 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
-  <script src="sets.js?v=59"></script>
-  <script src="themes.js?v=59"></script>
-  <script src="bios.js?v=59"></script>
-  <script src="analyser.js?v=59"></script>
+  <script src="sets.js?v=60"></script>
+  <script src="themes.js?v=60"></script>
+  <script src="bios.js?v=60"></script>
+  <script src="analyser.js?v=60"></script>
   <script>
     const video = document.getElementById("player");
     const setsEl = document.getElementById("sets");
@@ -2705,12 +2705,26 @@
     }
 
     function seekTo(seconds) {
-      pendingSeek = seconds;
-      if (video.readyState >= 1) {
-        player.currentTime = seconds;
-        pendingSeek = null;
-        render(seconds);
+      const target = Math.max(0, Number(seconds) || 0);
+      pendingSeek = target;
+      function applySeek() {
+        try {
+          player.currentTime = target;
+          pendingSeek = null;
+          render(target);
+          return true;
+        } catch (err) {
+          return false;
+        }
       }
+      // YouTube/Plyr: the bare <video> readyState stays 0 — use the Plyr API directly.
+      if (current && current.usingYoutube) {
+        if (!applySeek() && player.ready) {
+          player.ready.then(function () { applySeek(); }).catch(function () { /* keep pending */ });
+        }
+        return;
+      }
+      if (video.readyState >= 1) applySeek();
     }
 
     player.on("loadedmetadata", function () {
