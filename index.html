@@ -1880,10 +1880,10 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
-  <script src="sets.js?v=58"></script>
-  <script src="themes.js?v=58"></script>
-  <script src="bios.js?v=58"></script>
-  <script src="analyser.js?v=58"></script>
+  <script src="sets.js?v=59"></script>
+  <script src="themes.js?v=59"></script>
+  <script src="bios.js?v=59"></script>
+  <script src="analyser.js?v=59"></script>
   <script>
     const video = document.getElementById("player");
     const setsEl = document.getElementById("sets");
@@ -2253,7 +2253,7 @@
     }, true);
 
     function syncAnalyser() {
-      if (!window.HorizonAnalyser || !current || current.youtube) return;
+      if (!window.HorizonAnalyser || !current || current.usingYoutube) return;
       const el = player.media;
       if (!el || (el.tagName !== "VIDEO" && el.tagName !== "AUDIO")) return;
       try { el.crossOrigin = "anonymous"; } catch (err) { /* ignore */ }
@@ -2610,11 +2610,41 @@
       }
     }
 
-    function loadSet(id, seek) {
+    let loadSeq = 0;
+
+    function youtubeIdFromSet(set) {
+      if (!set) return null;
+      if (set.youtube) {
+        const raw = String(set.youtube);
+        const fromUrl = raw.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/);
+        if (fromUrl) return fromUrl[1];
+        if (/^[\w-]{11}$/.test(raw)) return raw;
+      }
+      const src = String(set.source || "");
+      let id = null;
+      const re = /(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/g;
+      let match;
+      while ((match = re.exec(src))) id = match[1];
+      return id;
+    }
+
+    async function localVideoExists(path) {
+      if (!path) return false;
+      try {
+        const url = new URL(path, window.location.href).href;
+        const res = await fetch(url, { method: "HEAD", cache: "no-store" });
+        return res.ok;
+      } catch (err) {
+        return false;
+      }
+    }
+
+    async function loadSet(id, seek) {
       const set = window.SETS.find(function (item) { return item.id === id; });
       if (!set) return;
       if (current && current.id === id && seek == null) return;
-      current = set;
+      const seq = ++loadSeq;
+      current = Object.assign({}, set, { usingYoutube: false });
       activeIndex = -2;
       pendingSeek = seek;
       applyTheme(set);
@@ -2623,19 +2653,37 @@
       syncBioButton();
       showResume(id);
       clock.textContent = set.mood;
-      if (set.youtube) {
+
+      const ytId = youtubeIdFromSet(set);
+      let useYoutube = false;
+      if (set.file) {
+        const exists = await localVideoExists(set.file);
+        if (seq !== loadSeq) return;
+        useYoutube = !exists && !!ytId;
+        if (!exists && !ytId) {
+          clock.textContent = "Vidéo locale introuvable";
+        }
+      } else if (ytId) {
+        useYoutube = true;
+      }
+      if (seq !== loadSeq) return;
+      current = Object.assign({}, set, { usingYoutube: useYoutube });
+
+      if (useYoutube) {
         if (window.HorizonAnalyser && window.HorizonAnalyser.detach) {
           window.HorizonAnalyser.detach();
         } else if (window.HorizonAnalyser) {
           window.HorizonAnalyser.stop();
         }
         if (window.location.protocol === "file:") {
-          clock.textContent = "Ouvre Horizon via http://127.0.0.1:8765 (YouTube refuse file://)";
+          clock.textContent = "Ouvre Horizon via http://127.0.0.1:8766 (YouTube refuse file://)";
+        } else {
+          clock.textContent = set.mood + " · YouTube";
         }
         player.source = {
           type: "video",
           title: set.artist + " · " + set.place,
-          sources: [{ src: set.youtube, provider: "youtube" }],
+          sources: [{ src: ytId, provider: "youtube" }],
         };
         setTimeout(function () { patchYoutubeIframes(player.elements.container); }, 0);
       } else if (set.file) {
@@ -2702,7 +2750,7 @@
     player.on("seeked", function () {
       if (current) render(player.currentTime || 0);
       // Seek / changement de titre dans le même set : garder l’analyseur vivant.
-      if (current && !current.youtube && !player.paused && window.HorizonAnalyser) {
+      if (current && !current.usingYoutube && !player.paused && window.HorizonAnalyser) {
         window.HorizonAnalyser.start();
       }
     });

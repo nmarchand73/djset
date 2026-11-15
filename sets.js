@@ -122,7 +122,7 @@ window.SETS = [
     "mood": "Melodic techno puissante et cinématographique",
     "accent": "#F65E08",
     "file": "videos/ARTBAT WE2 ｜ Tomorrowland 2026.mp4",
-    "source": "mixinout (la description YouTube ne contient pas de tracklist)",
+    "source": "mixinout (https://www.youtube.com/watch?v=PApz2eQ3wzc)",
     "tracks": [
       {
         "at": "0:13",
@@ -452,7 +452,7 @@ window.SETS = [
     "mood": "Progressive house et longues montées",
     "accent": "#EFBB65",
     "file": "videos/Eric Prydz WE2 ｜ Tomorrowland 2025.mp4",
-    "source": "mixinout (la description YouTube ne contient pas de tracklist)",
+    "source": "mixinout (https://www.youtube.com/watch?v=LIZCWL2zdPo)",
     "tracks": [
       {
         "at": "0:12",
