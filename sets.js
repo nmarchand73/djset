@@ -2,7 +2,7 @@ window.SETS = [
   {
     "id": "ben",
     "artist": "Ben Böhmer",
-    "place": "Cercle · Cappadoce",
+    "place": "Cercle 2020 · Cappadoce",
     "mood": "Melodic house douce et aérienne",
     "accent": "#869BE4",
     "file": "videos/Ben Böhmer live above Cappadocia in Turkey for Cercle.mp4",
@@ -290,7 +290,7 @@ window.SETS = [
   {
     "id": "monique",
     "artist": "Miss Monique",
-    "place": "Cercle · Biosphère de Montréal",
+    "place": "Cercle 2022 · Biosphère de Montréal",
     "mood": "Progressive mélodique",
     "accent": "#2EE66A",
     "file": "videos/Miss Monique at the Biosphere Museum in Montreal, Canada for Cercle.mp4",
@@ -589,7 +589,7 @@ window.SETS = [
   {
     "id": "lane8",
     "artist": "Lane 8",
-    "place": "Room Service Festival · Chill Nation Stage",
+    "place": "Room Service Festival 2024 · Chill Nation Stage",
     "mood": "Melodic house douce et crépusculaire",
     "accent": "#7C9BB8",
     "file": "videos/Lane 8 - Room Service Festival (Full Set).mp4",
@@ -1263,7 +1263,7 @@ window.SETS = [
   {
     "id": "lysten",
     "artist": "Lysten",
-    "place": "La Maroquinerie · Paris",
+    "place": "La Maroquinerie 2025 · Paris",
     "mood": "Live électronique cinématique · piano & machines",
     "accent": "#E07040",
     "file": "videos/Lysten - BURN (Live Electronic Performance ｜ La Maroquinerie, Paris).mp4",
@@ -1281,7 +1281,7 @@ window.SETS = [
   {
     "id": "dresel",
     "artist": "Irène Drésel",
-    "place": "Passengers · Roseraie du Val-de-Marne",
+    "place": "Passengers 2024 · Roseraie du Val-de-Marne",
     "mood": "Techno florale hypnotique · Rose Fluo",
     "accent": "#FF2D7A",
     "file": "videos/Irène Drésel - Passengers Roseraie du Val-de-Marne.mp4",
@@ -1390,7 +1390,7 @@ window.SETS = [
   {
     "id": "cattaneowarren",
     "artist": "Hernán Cattáneo b2b Nick Warren",
-    "place": "Loveland Festival · Circle Stage, Amsterdam",
+    "place": "Loveland Festival 2025 · Circle Stage, Amsterdam",
     "mood": "Progressive house mélodique, long-form sunset",
     "accent": "#C4A35A",
     "file": "videos/Hernan Cattaneo b2b Nick Warren - Loveland Festival 2025.mp4",
@@ -1688,7 +1688,7 @@ window.SETS = [
   {
     "id": "northern",
     "artist": "Sasha & Digweed",
-    "place": "Northern Exposure Redux · 0°/North",
+    "place": "Northern Exposure Redux 2026 · 0°/North",
     "mood": "Progressive-dub-breaks crépusculaire, odyssée 1996 revisitée",
     "accent": "#4EC8B0",
     "file": "videos/Sasha & Digweed - Northern Exposure Redux (North).mp4",
@@ -1778,7 +1778,7 @@ window.SETS = [
   {
     "id": "cattaneo",
     "artist": "Hernán Cattáneo",
-    "place": "Cercle Festival · A380 Stage, Musée de l'Air et de l'Espace",
+    "place": "Cercle Festival 2022 · A380 Stage, Musée de l'Air et de l'Espace",
     "mood": "Progressive house mélodique, long-form sunset Cercle",
     "accent": "#B8956A",
     "file": "videos/Hernán Cattáneo at Cercle Festival 2022 (A380 Stage).mp4",
@@ -2089,6 +2089,244 @@ window.SETS = [
         "title": "Beauty In Us",
         "layers": []
       }
+    ]
+  },
+  {
+    "id": "argy",
+    "artist": "Argy",
+    "place": "Tomorrowland 2026 · NEWORLD · Freedom Stage · WE2",
+    "mood": "Melodic techno festival, NEWORLD peak-time",
+    "accent": "#3CE0D0",
+    "file": "videos/Argy Presents NEWORLD WE2 ｜ Tomorrowland 2026.mp4",
+    "source": "mixinout (https://www.youtube.com/watch?v=7JPmS_bWjhI)",
+    "tracks": [
+      { "at": "0:13", "seconds": 13, "artist": "Argy & SOLANCE", "title": "Assunto", "layers": [] },
+      { "at": "4:11", "seconds": 251, "artist": "ARTBAT & Argy", "title": "Follow The Echo", "layers": [] },
+      { "at": "7:07", "seconds": 427, "artist": "Argy & ALOK & Adam Beyer", "title": "Keep Up", "layers": [] },
+      { "at": "9:58", "seconds": 598, "artist": "Goom Gum", "title": "March", "layers": [] },
+      { "at": "14:05", "seconds": 845, "artist": "Argy & 7 Skies", "title": "Murda", "layers": [] },
+      { "at": "17:05", "seconds": 1025, "artist": "Tiësto ft. BT", "title": "Love Comes Again (Zarka Remix)", "layers": [] },
+      { "at": "20:51", "seconds": 1251, "artist": "Adam Sellouk & Alex Kaspersky", "title": "Body", "layers": [] },
+      { "at": "23:50", "seconds": 1430, "artist": "Armin van Buuren & Argy ft. Marlo Rex", "title": "Like A Child", "layers": [] },
+      { "at": "26:57", "seconds": 1617, "artist": "David Guetta ft. Chris Willis", "title": "Just A Little More Love (Argy Remix)", "layers": [] },
+      { "at": "30:03", "seconds": 1803, "artist": "Argy & SOLANCE", "title": "Window Shake", "layers": [] },
+      { "at": "33:29", "seconds": 2009, "artist": "Omiki", "title": "Ona", "layers": [] },
+      { "at": "36:34", "seconds": 2194, "artist": "Argy & Paul Oakenfold & Planet Perfecto Knights", "title": "ResuRection", "layers": [] },
+      { "at": "40:30", "seconds": 2430, "artist": "Omiki & Faders", "title": "Tomony", "layers": [] },
+      { "at": "44:34", "seconds": 2674, "artist": "Anyma & Argy & Son Of Son", "title": "Voices In My Head (Amelie Lens Remix)", "layers": [] },
+      { "at": "47:37", "seconds": 2857, "artist": "Tiësto", "title": "Traffic (Maddix Remix)", "layers": [] },
+      { "at": "49:21", "seconds": 2961, "artist": "Amelie Lens", "title": "Come Closer", "layers": [] },
+      { "at": "53:01", "seconds": 3181, "artist": "Argy & MEDUZA ft. PollyAnna", "title": "Melodia (Omiki & Talla Remix)", "layers": [] }
+    ]
+  },
+  {
+    "id": "agentsoftime",
+    "artist": "Agents Of Time",
+    "place": "Tomorrowland 2026 · The Great Library · WE1",
+    "mood": "Melodic techno festival, Time Machine peak-time",
+    "accent": "#E8B86D",
+    "file": "videos/Agents Of Time WE1 ｜ Tomorrowland 2026.mp4",
+    "source": "whatstheid + tracklistfinder + livetracklist (https://www.youtube.com/watch?v=a5IR5EqgxMo)",
+    "tracks": [
+      { "at": "0:12", "seconds": 12, "artist": "Agents Of Time", "title": "ID", "layers": [] },
+      { "at": "3:15", "seconds": 195, "artist": "Agents Of Time & CERES", "title": "Baby (ID Remix)", "layers": [] },
+      { "at": "6:00", "seconds": 360, "artist": "Agents Of Time", "title": "ID", "layers": [] },
+      { "at": "16:25", "seconds": 985, "artist": "Agents Of Time", "title": "ID", "layers": [] },
+      { "at": "20:05", "seconds": 1205, "artist": "Armin van Buuren & Skytech", "title": "She A Freak", "layers": [] },
+      { "at": "23:40", "seconds": 1420, "artist": "AZAD & Jast & RYCH DSYGNR", "title": "Yatabala", "layers": [] },
+      { "at": "34:40", "seconds": 2080, "artist": "Kevin de Vries & Stylo & Eli & Dani", "title": "In The Night", "layers": [] },
+      { "at": "38:00", "seconds": 2280, "artist": "Agents Of Time", "title": "ID", "layers": [] },
+      { "at": "41:50", "seconds": 2510, "artist": "ARTBAT & R3HAB & Stylo & Eli & Dani ft. NAIIM", "title": "Fight Machine", "layers": [] },
+      { "at": "44:40", "seconds": 2680, "artist": "Agents Of Time & Miss Monique", "title": "Rajada", "layers": [] },
+      { "at": "48:50", "seconds": 2930, "artist": "Fedde Le Grand", "title": "Put Your Hands Up For Detroit (ID Remix)", "layers": [] },
+      { "at": "51:50", "seconds": 3110, "artist": "The Prodigy", "title": "Breathe (ID Remix)", "layers": [] },
+      { "at": "55:55", "seconds": 3355, "artist": "Bountyhunter", "title": "Woops (Dimitri Vegas & Junkie Kid Remix / BRANDON Remix)", "layers": [] },
+      { "at": "58:35", "seconds": 3515, "artist": "Marie Davidson", "title": "Work It (Citadelle Rework)", "layers": [] },
+      {
+        "at": "1:01:30",
+        "seconds": 3690,
+        "artist": "Mau P",
+        "title": "MERTHER",
+        "layers": [{ "artist": "Nirvana", "title": "Smells Like Teen Spirit" }]
+      },
+      { "at": "1:05:10", "seconds": 3910, "artist": "Swedish House Mafia", "title": "Wait So Long (Why Do I Have To) (Agents Of Time Remix)", "layers": [] },
+      { "at": "1:07:50", "seconds": 4070, "artist": "Armin van Buuren & Agents Of Time ft. Orkid", "title": "Love Is Eternity", "layers": [] },
+      { "at": "1:11:50", "seconds": 4310, "artist": "Agents Of Time", "title": "ID", "layers": [] },
+      { "at": "1:15:50", "seconds": 4550, "artist": "Agents Of Time & JONOS & Son Of Son", "title": "You + Me", "layers": [] },
+      { "at": "1:16:15", "seconds": 4575, "artist": "Kevin de Vries & Cassian", "title": "Payback", "layers": [] },
+      { "at": "1:23:40", "seconds": 5020, "artist": "Agents Of Time", "title": "Zodiac", "layers": [] }
+    ]
+  },
+  {
+    "id": "kolsch",
+    "artist": "Kölsch",
+    "place": "Tomorrowland 2026 · Mainstage · WE2",
+    "mood": "Melodic techno émotionnel, Kompakt / IPSO peak-time",
+    "accent": "#E85A1A",
+    "file": "videos/Kölsch WE2 ｜ Tomorrowland 2026.mp4",
+    "source": "setradar + whatstheid + mixd (https://www.youtube.com/watch?v=ra8NYbzPMnk)",
+    "tracks": [
+      { "at": "0:12", "seconds": 12, "artist": "Pete Tong & Kölsch", "title": "Nature of Daylight", "layers": [] },
+      { "at": "4:31", "seconds": 271, "artist": "CamelPhat & Kölsch", "title": "Waste My Time", "layers": [] },
+      { "at": "8:27", "seconds": 507, "artist": "M.A.N.D.Y. vs. Booka Shade", "title": "Body Language (ID Remix)", "layers": [] },
+      { "at": "10:20", "seconds": 620, "artist": "Patrick Topping", "title": "Be Sharp Say Nowt (Kölsch Remix)", "layers": [] },
+      { "at": "13:16", "seconds": 796, "artist": "The Verve", "title": "Bittersweet Symphony (Kölsch Remix)", "layers": [] },
+      { "at": "14:59", "seconds": 899, "artist": "Kölsch", "title": "Picasso", "layers": [] },
+      { "at": "18:13", "seconds": 1093, "artist": "Kölsch", "title": "ID", "layers": [] },
+      { "at": "19:33", "seconds": 1173, "artist": "The Temper Trap", "title": "Sweet Disposition (Kölsch Remix)", "layers": [] },
+      { "at": "24:26", "seconds": 1466, "artist": "Benny Benassi Pres. The Biz", "title": "Satisfaction (Kölsch Remix)", "layers": [] },
+      { "at": "26:34", "seconds": 1594, "artist": "Butch", "title": "Countach (Kölsch Remix)", "layers": [] },
+      { "at": "28:21", "seconds": 1701, "artist": "Danny Tenaglia & Celeda", "title": "Music Is The Answer", "layers": [] },
+      { "at": "29:02", "seconds": 1742, "artist": "Kölsch ft. Gregor Schwellenbach", "title": "Cassiopeia", "layers": [] },
+      { "at": "33:46", "seconds": 2026, "artist": "ROSALÍA, Björk & Yves Tumor", "title": "Berghain", "layers": [] },
+      { "at": "35:11", "seconds": 2111, "artist": "Armin van Buuren & Camisra", "title": "Let Me Show You", "layers": [] },
+      { "at": "36:36", "seconds": 2196, "artist": "Masters At Work", "title": "Work (ID Remix)", "layers": [] },
+      { "at": "39:13", "seconds": 2353, "artist": "Kölsch", "title": "Grey", "layers": [] },
+      { "at": "41:47", "seconds": 2507, "artist": "Julian Jeweil", "title": "Derbouka", "layers": [] },
+      { "at": "44:56", "seconds": 2696, "artist": "ENUR ft. Natasja", "title": "Calabria", "layers": [] },
+      {
+        "at": "48:04",
+        "seconds": 2884,
+        "artist": "Kölsch",
+        "title": "Loreley",
+        "layers": [{ "artist": "Kölsch", "title": "Loreley (Deadmau5 Remix)" }]
+      },
+      { "at": "52:19", "seconds": 3139, "artist": "Kölsch ft. Troels Abrahamsen", "title": "All That Matters (ARTBAT Remix)", "layers": [] },
+      { "at": "54:54", "seconds": 3294, "artist": "Kölsch ft. Troels Abrahamsen", "title": "All That Matters (Symphony of Unity · Strings Reimagined)", "layers": [] }
+    ]
+  },
+  {
+    "id": "kolscheiffel",
+    "artist": "Kölsch",
+    "place": "Cercle 2017 · Tour Eiffel · Paris",
+    "mood": "Sunset mélodique sur la Tour Eiffel, Kompakt émotionnel",
+    "accent": "#E85A1A",
+    "file": "videos/Kölsch @ Tour Eiffel in Paris, France for Cercle.mp4",
+    "source": "mixinout + tracklistfinder (https://www.youtube.com/watch?v=DiiKdG4lOug)",
+    "tracks": [
+      { "at": "0:00", "seconds": 0, "artist": "Kölsch ft. Ludwig Kölsch", "title": "1989", "layers": [] },
+      { "at": "1:00", "seconds": 60, "artist": "Kölsch & Gregor Schwellenbach", "title": "Serij", "layers": [] },
+      { "at": "5:00", "seconds": 300, "artist": "Kölsch", "title": "Left Eye Left", "layers": [] },
+      { "at": "9:10", "seconds": 550, "artist": "Kiasmos", "title": "Paused (Stimming Remix)", "layers": [] },
+      { "at": "12:40", "seconds": 760, "artist": "Yeah But No", "title": "Sand", "layers": [] },
+      { "at": "17:45", "seconds": 1065, "artist": "Patrice Bäumel", "title": "The Hatchet", "layers": [] },
+      { "at": "22:05", "seconds": 1325, "artist": "Kölsch", "title": "Atreyu", "layers": [] },
+      {
+        "at": "25:04",
+        "seconds": 1504,
+        "artist": "Techno Frühstück",
+        "title": "Seenot (BAAL Remix)",
+        "layers": [{ "artist": "Hot Since 82 & Joe T Vannelli ft. Csilla", "title": "The End" }]
+      },
+      { "at": "29:32", "seconds": 1772, "artist": "WhoMadeWho", "title": "Dynasty (Kölsch Remix)", "layers": [] },
+      { "at": "33:27", "seconds": 2007, "artist": "Riva Starr Pres. Hyperloop", "title": "Resilience", "layers": [] },
+      { "at": "36:45", "seconds": 2205, "artist": "ID", "title": "ID", "layers": [] },
+      {
+        "at": "39:34",
+        "seconds": 2374,
+        "artist": "Kölsch",
+        "title": "Push",
+        "layers": [{ "artist": "Kölsch ft. Gregor Schwellenbach", "title": "Cassiopeia" }]
+      },
+      { "at": "46:20", "seconds": 2780, "artist": "Björk", "title": "Hyperballad (Kölsch Remix)", "layers": [] },
+      { "at": "50:25", "seconds": 3025, "artist": "Bushwacka!", "title": "Remember (Dub)", "layers": [] },
+      { "at": "54:00", "seconds": 3240, "artist": "Choice / Laurent Garnier", "title": "Acid Eiffel", "layers": [] },
+      { "at": "58:16", "seconds": 3496, "artist": "Maurizio", "title": "Domina (Maurizio Mix Edit)", "layers": [] },
+      { "at": "58:50", "seconds": 3530, "artist": "Kölsch", "title": "Liath", "layers": [] },
+      { "at": "1:04:50", "seconds": 3890, "artist": "Nils Frahm", "title": "Says (Three Hands Collective Rework)", "layers": [] },
+      { "at": "1:08:48", "seconds": 4128, "artist": "St Germain", "title": "Rose Rouge", "layers": [] }
+    ]
+  },
+  {
+    "id": "kolschtl17",
+    "artist": "Kölsch",
+    "place": "Tomorrowland Belgium 2017 · ANTS Stage · WE2",
+    "mood": "Melodic techno festival, IPSO / Kompakt peak-time",
+    "accent": "#F07828",
+    "file": "videos/Tomorrowland Belgium 2017 ｜ Kölsch.mp4",
+    "source": "tracklistfinder + watchthedj + 1001.tl/f5hc3y9 (https://www.youtube.com/watch?v=AF3m5XTnoKk)",
+    "tracks": [
+      { "at": "0:00", "seconds": 0, "artist": "Kölsch", "title": "1983", "layers": [] },
+      {
+        "at": "4:15",
+        "seconds": 255,
+        "artist": "Monkey Safari",
+        "title": "Oxygen",
+        "layers": [{ "artist": "Andre Volodin ft. Karina Smirnova", "title": "Cage (Ad Brown Dub Mix)" }]
+      },
+      { "at": "9:28", "seconds": 568, "artist": "Radio Slave", "title": "Feel The Same", "layers": [] },
+      { "at": "9:55", "seconds": 595, "artist": "Rob Hes", "title": "The Solution", "layers": [] },
+      { "at": "13:08", "seconds": 788, "artist": "St Germain", "title": "How Dare You", "layers": [] },
+      { "at": "16:10", "seconds": 970, "artist": "Kölsch", "title": "DerDieDas / Zinderlong", "layers": [] },
+      { "at": "19:22", "seconds": 1162, "artist": "Patrice Bäumel", "title": "Sorcery", "layers": [] },
+      { "at": "21:20", "seconds": 1280, "artist": "Technotronic", "title": "Pump Up The Jam", "layers": [] },
+      { "at": "24:00", "seconds": 1440, "artist": "Julian Jeweil", "title": "Forum", "layers": [] },
+      { "at": "30:10", "seconds": 1810, "artist": "Maggie Rogers", "title": "Alaska (Kölsch Remix)", "layers": [] },
+      { "at": "34:55", "seconds": 2095, "artist": "Kölsch", "title": "Grey", "layers": [] },
+      { "at": "40:05", "seconds": 2405, "artist": "Davide Mancini & MdS", "title": "Summer", "layers": [] },
+      { "at": "44:30", "seconds": 2670, "artist": "Hardfloor", "title": "Acperience 1", "layers": [] },
+      { "at": "49:21", "seconds": 2961, "artist": "Kölsch", "title": "Opa", "layers": [] },
+      { "at": "53:23", "seconds": 3203, "artist": "Anja Schneider", "title": "Twisty", "layers": [] },
+      { "at": "56:40", "seconds": 3400, "artist": "Slam", "title": "My Machine 909", "layers": [] },
+      { "at": "1:01:02", "seconds": 3662, "artist": "Age Of Love", "title": "The Age Of Love", "layers": [] },
+      { "at": "1:05:45", "seconds": 3945, "artist": "Kölsch", "title": "Push", "layers": [] },
+      { "at": "1:08:50", "seconds": 4130, "artist": "Kölsch ft. Troels Abrahamsen", "title": "All That Matters", "layers": [] },
+      { "at": "1:13:15", "seconds": 4395, "artist": "Luca Maniaci", "title": "Orchidea", "layers": [] },
+      { "at": "1:16:15", "seconds": 4575, "artist": "Fango", "title": "N1 (Despejado Mix)", "layers": [] },
+      { "at": "1:19:50", "seconds": 4790, "artist": "DJ Bone", "title": "Black Patterns (Len Faki Hardspace Mix)", "layers": [] },
+      { "at": "1:22:30", "seconds": 4950, "artist": "Moby", "title": "Porcelain (Alan Fitzpatrick Late Night Dub)", "layers": [] },
+      { "at": "1:24:10", "seconds": 5050, "artist": "London Grammar", "title": "Hell To The Liars (Kölsch Remix)", "layers": [] }
+    ]
+  },
+  {
+    "id": "kolschwinter",
+    "artist": "Kölsch",
+    "place": "Tomorrowland Winter 2023 · Frozen Lotus Stage",
+    "mood": "Melodic techno hivernal, Alpe d'Huez",
+    "accent": "#7EB8D4",
+    "file": "videos/Kölsch at the Frozen Lotus Stage ｜ Tomorrowland Winter 2023.mp4",
+    "source": "mixd + tracklistfinder + watchthedj (https://www.youtube.com/watch?v=Sl4Ml9FG8zw)",
+    "tracks": [
+      { "at": "0:00", "seconds": 0, "artist": "Kölsch", "title": "ID", "layers": [] },
+      { "at": "5:18", "seconds": 318, "artist": "ID", "title": "ID", "layers": [] },
+      {
+        "at": "8:30",
+        "seconds": 510,
+        "artist": "Kevin de Vries",
+        "title": "Dance With Me",
+        "layers": [
+          { "artist": "Kevin de Vries", "title": "Dance With Me (Kölsch Remix)" },
+          { "artist": "Age Of Love", "title": "The Age Of Love (Acappella)" }
+        ]
+      },
+      { "at": "15:00", "seconds": 900, "artist": "Kölsch", "title": "ID", "layers": [] },
+      {
+        "at": "18:00",
+        "seconds": 1080,
+        "artist": "Josh Wink & Lil' Louis",
+        "title": "How's Your Evening So Far? (Filtered Mix)",
+        "layers": [{ "artist": "Hardrive", "title": "Deep Inside (Acappella)" }]
+      },
+      { "at": "22:55", "seconds": 1375, "artist": "Kölsch", "title": "Environ", "layers": [] },
+      { "at": "25:45", "seconds": 1545, "artist": "Mark van Dale & Enrico", "title": "Water Verve", "layers": [] },
+      { "at": "29:40", "seconds": 1780, "artist": "Kölsch & Kevin de Vries", "title": "Gate", "layers": [] },
+      { "at": "33:00", "seconds": 1980, "artist": "Tiga", "title": "Mind Dimension (Kölsch Remix)", "layers": [] },
+      { "at": "39:12", "seconds": 2352, "artist": "Maceo Plex & Faithless", "title": "Insomnia 2021 (Epic Mix)", "layers": [] },
+      { "at": "44:45", "seconds": 2685, "artist": "Kölsch ft. Troels Abrahamsen", "title": "All That Matters", "layers": [] },
+      { "at": "49:45", "seconds": 2985, "artist": "Butch", "title": "Countach (Kölsch Remix)", "layers": [] },
+      { "at": "52:30", "seconds": 3150, "artist": "Together", "title": "So Much Love To Give (ID Remix)", "layers": [] },
+      {
+        "at": "56:54",
+        "seconds": 3414,
+        "artist": "ID",
+        "title": "ID",
+        "layers": [{ "artist": "Kölsch", "title": "Grey" }]
+      },
+      { "at": "1:02:52", "seconds": 3772, "artist": "ID", "title": "ID", "layers": [] },
+      { "at": "1:05:25", "seconds": 3925, "artist": "James Blake", "title": "Limit To Your Love (Kölsch Remix)", "layers": [] },
+      { "at": "1:09:09", "seconds": 4149, "artist": "ID", "title": "ID", "layers": [] },
+      { "at": "1:13:28", "seconds": 4408, "artist": "Kölsch", "title": "Loreley", "layers": [] },
+      { "at": "1:19:07", "seconds": 4747, "artist": "Talk Talk", "title": "It's My Life", "layers": [] }
     ]
   }
 ];

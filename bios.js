@@ -537,4 +537,142 @@ window.BIOS = {
       }
     ]
   },
+  argy: {
+    name: "Argy",
+    role: "Producteur & DJ · NEWORLD",
+    origin: "Rhodes · Londres · monde",
+    active: "depuis ~2005",
+    labels: ["Afterlife", "ÆDEN", "NEWORLD", "Cercle Records", "Poker Flat"],
+    tags: ["melodic techno", "progressive", "festival"],
+    lead: "Grec de Rhodes passé du minimal underground à un univers festival sci-fi — NEWORLD — où Afterlife, ÆDEN et le peak-time se croisent.",
+    body: [
+      "Né en 1985 à Rhodes, Argy produit dès l’adolescence puis part étudier la music technology à Londres. Love Dose (Poker Flat, 2005) le propulse dans la vague minimal techno européenne : Raum…musik, mixes Focus on Argy, tournées club.",
+      "Les années 2010 explorent deep et tech-house : Fundamentals (2011), le duo Argy & Mama avec Simone Ogunbunmi (Recluse sur BPitch, Dominonation en 2015), Bedrock, Crosstown Rebels. En parallèle, il compose pour des marques (Ferrari, BVLGARI, Carolina Herrera) et navigue entre electronica et house 90s.",
+      "Après le COVID, Ketuvim (Renaissance) marque un reset plus progressif et cinématographique. Tataki (2022), Pantheon avec Goom Gum, Aria avec Omnya, puis Higher Power avec Anyma & MAGNUS le placent au cœur de la nébuleuse Afterlife / melodic techno festival.",
+      "New World (2024, Afterlife) et NEWORLD II (2026) formalisent l’esthétique Matrix / rituel futuriste : Aria et Sierra certifiées or, Melodia avec MEDUZA, Voices In My Head avec Anyma. Le concept NEWORLD devient tournée visuelle autant que label d’identité.",
+      "Sur scène — EDC, Dreamstate, Tomorrowland, Cercle Jungfraujoch — Argy joue peak-time : builds trance-techno, collabs SOLANCE / Omiki, et une image très construite (mode, cover L’Officiel / Rolling Stone) qui prolonge le mythe NEWORLD hors du dancefloor."
+    ],
+    albums: [
+      { title: "Fundamentals", year: "2011", note: "Ibadan · premier album" },
+      { title: "Dominonation", year: "2015", note: "avec Mama · BPitch / house" },
+      { title: "The Interior Journey", year: "2021", note: "Renaissance · post-COVID reset" },
+      { title: "New World", year: "2024", note: "Afterlife · ère NEWORLD" },
+      { title: "NEWORLD II", year: "2026", note: "suite du concept festival" }
+    ],
+    sets: [
+      {
+        title: "Cercle · Jungfraujoch (Top of Europe)",
+        year: "2024",
+        note: "Sphinx Observatory · 3600 m",
+        url: "https://www.youtube.com/watch?v=sL16rh73r-M"
+      },
+      {
+        title: "Tomorrowland · NEWORLD Freedom Stage WE2",
+        year: "2026",
+        note: "Set Horizon",
+        url: "https://www.youtube.com/watch?v=7JPmS_bWjhI"
+      }
+    ]
+  },
+  agentsoftime: {
+    name: "Agents Of Time",
+    role: "Live act & producteurs · Time Machine",
+    origin: "Bari · Italie",
+    active: "depuis 2013",
+    labels: ["Time Machine Recordings", "Afterlife", "Kompakt", "Correspondent", "Ellum Audio", "Tomorrowland Music"],
+    tags: ["melodic techno", "live hardware", "festival"],
+    lead: "Duo bariote Andrea Di Ceglie & Luigi Tutolo — live hardware mélodique passé d’Afterlife/Kompakt à leur propre Time Machine, entre tunnel émotionnel et peak-time festival.",
+    body: [
+      "Formés à Bari en 2013 (d’abord en trio, puis duo), Andrea Di Ceglie et Luigi Tutolo croisent groove deep-house et mélodie progressive (Trentemøller, Mathew Jonson). Le nom Agents Of Time vient d’un titre de Jonson — hommage assumé à l’improvisation hardware.",
+      "Polina (Correspondent, 2014) et l’album Spread The Word (Stem) ouvrent la tournée. Ellum Audio (Maceo Plex), puis Afterlife (Dream Vision, Mirage) et Kompakt (Universo, 2022) ancrent un son melodic techno sombre, très live : batteries, 303, séquenceurs et mélangeur artisanal bariote.",
+      "En 2019, Repeating Patterns, Numbers and Letters avec Mathew Jonson prolonge les lives communs (Rex Club, Movement Turin). Sur scène, le set reste improvisé — « dance between human minds and analog equipment » — autant que le DJ set, plus éclectique.",
+      "Pour les dix ans (2023), ils lancent Time Machine Recordings avec Zodiac : label-maison après Obscure et Curle. Suivent Only Human, collabs JONOS / Son Of Son (You + Me), Oblivion avec Fors, et Rajada avec Miss Monique sur Tomorrowland Music.",
+      "Cercle au Viaduc de Millau (2018), Boiler Room Berlin, Tomorrowland Winter et The Great Library à Boom : le duo bascule du club hardware au grand format festival sans lâcher la signature Time Machine — builds longs, hooks émotionnels, IDs maison."
+    ],
+    albums: [
+      { title: "Spread The Word", year: "2014", note: "Stem · premier album" },
+      { title: "The Mirage", year: "2022", note: "Afterlife · EP signature" },
+      { title: "Universo", year: "2022", note: "Kompakt · second album" },
+      { title: "Zodiac", year: "2023", note: "Time Machine · lancement label" },
+      { title: "You + Me", year: "2025", note: "avec JONOS & Son Of Son · Time Machine" }
+    ],
+    sets: [
+      {
+        title: "Cercle · Viaduc de Millau",
+        year: "2018",
+        note: "Live hardware sur le plus haut pont du monde",
+        url: "https://www.youtube.com/watch?v=U7mQgHFbPFo"
+      },
+      {
+        title: "Tomorrowland Winter 2026",
+        year: "2026",
+        note: "Set officiel Winter",
+        url: "https://www.youtube.com/watch?v=a_Qpmks-RNY"
+      },
+      {
+        title: "Tomorrowland · The Great Library WE1",
+        year: "2026",
+        note: "Set Horizon",
+        url: "https://www.youtube.com/watch?v=a5IR5EqgxMo"
+      }
+    ]
+  },
+  kolsch: {
+    name: "Kölsch",
+    role: "Producteur & DJ · Kompakt / IPSO",
+    origin: "Copenhague · Christiania",
+    active: "depuis les années 90 (Kölsch ~2010)",
+    labels: ["Kompakt", "IPSO", "Get Physical", "Armada"],
+    tags: ["melodic techno", "house émotionnelle", "orchestral"],
+    lead: "Rune Reilly Kølsch — Danois mi-irlandais mi-allemand, passé du hit Calabria à la trilogie autobiographique Kompakt : techno mélodique, cordes et peak-time festival.",
+    body: [
+      "Né le 9 février 1977 à Christiania (Copenhague), Rune Reilly Kølsch grandit entre commune hippie, étés allemands chez les grands-parents et racines irlandaises. Dès les années 90 il produit avec son frère Johannes Torpe (Artificial Funk, Fashion Victims) et multiplie les aliases.",
+      "Sous Rune / Enur, Calabria (2003) puis Calabria 2007 avec Natasja deviennent un standard Ibiza et un n°1 club US. En parallèle, Tattoo Recs et Ink & Needle explorent un techno plus club — c’est là que Michael Mayer le ramène vers Kompakt.",
+      "Sous Kölsch, Speicher 68 / Loreley (2010) ouvrent la voie. La trilogie 1977 (2013), 1983 (2015) et 1989 (2017) raconte enfance, premiers voyages européens et adolescence, avec les cordes de Gregor Schwellenbach — Grey devient l’hymne Kompakt (dizaines de millions de streams).",
+      "Il lance IPSO (collabs Mayer, Tiga, Sasha), livre Fabric Presents Kölsch (2019), puis Now Here No Where (2020), l’ambient Isopolis (2021) et I Talk to Water (2023), album de deuil tissé d’archives musicales de son père. Remixes Coldplay, London Grammar, et live orchestra / Symphony of Unity prolongent le geste émotionnel.",
+      "Sur scène — fabric, Berghain, Space / Ushuaïa, Cercle Tour Eiffel, Tomorrowland Mainstage — Kölsch joue la mélodie comme un récit : builds longs, edits personnels (Sweet Disposition, Satisfaction, Bittersweet Symphony) et retours IPSO / All That Matters avec ARTBAT."
+    ],
+    albums: [
+      { title: "1977", year: "2013", note: "Kompakt · premier chapitre autobiographique" },
+      { title: "1983", year: "2015", note: "Kompakt · voyage Europe · Schwellenbach" },
+      { title: "1989", year: "2017", note: "Kompakt · fin de trilogie · Heritage Orchestra" },
+      { title: "Now Here No Where", year: "2020", note: "Kompakt · retour orchestral" },
+      { title: "I Talk to Water", year: "2023", note: "Kompakt · hommage au père" }
+    ],
+    sets: [
+      {
+        title: "Cercle · Tour Eiffel",
+        year: "2017",
+        note: "Sunset live depuis la tour",
+        url: "https://www.youtube.com/watch?v=DiiKdG4lOug"
+      },
+      {
+        title: "BBC Radio 1 · Essential Mix",
+        year: "2013",
+        note: "Mix signature Pete Tong",
+        url: "https://www.bbc.co.uk/programmes/b03ltb4k"
+      },
+      {
+        title: "Tomorrowland · Mainstage WE2",
+        year: "2026",
+        note: "Set Horizon",
+        url: "https://www.youtube.com/watch?v=ra8NYbzPMnk"
+      },
+      {
+        title: "Tomorrowland Belgium · ANTS WE2",
+        year: "2017",
+        note: "Set Horizon",
+        url: "https://www.youtube.com/watch?v=AF3m5XTnoKk"
+      },
+      {
+        title: "Tomorrowland Winter · Frozen Lotus",
+        year: "2023",
+        note: "Set Horizon",
+        url: "https://www.youtube.com/watch?v=Sl4Ml9FG8zw"
+      }
+    ]
+  },
+  kolscheiffel: { aliasOf: "kolsch" },
+  kolschtl17: { aliasOf: "kolsch" },
+  kolschwinter: { aliasOf: "kolsch" },
 };
