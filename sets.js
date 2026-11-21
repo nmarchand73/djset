@@ -2328,5 +2328,91 @@ window.SETS = [
       { "at": "1:13:28", "seconds": 4408, "artist": "Kölsch", "title": "Loreley", "layers": [] },
       { "at": "1:19:07", "seconds": 4747, "artist": "Talk Talk", "title": "It's My Life", "layers": [] }
     ]
+  },
+  {
+    "id": "mahmutorhan",
+    "artist": "Mahmut Orhan",
+    "place": "Tomorrowland 2026 · Weekend 2 · Crystal Garden",
+    "mood": "Deep house oriental, chaleureux et dansant",
+    "accent": "#D4A017",
+    "file": "videos/Mahmut Orhan WE2 ｜ Tomorrowland 2026.mp4",
+    "source": "whatstheid + watchthedj + tracklistfinder (https://www.youtube.com/watch?v=phd2kGcZjVA)",
+    "tracks": [
+      { "at": "0:16", "seconds": 16, "artist": "Mahmut Orhan & People Like Us", "title": "Dance Floor DNA (Extended Mix)", "layers": [] },
+      { "at": "7:22", "seconds": 442, "artist": "Francis Mercier & Mahmut Orhan", "title": "Sadete", "layers": [] },
+      { "at": "11:29", "seconds": 689, "artist": "Mahmut Orhan & ZHU", "title": "Transatlantic", "layers": [] },
+      { "at": "13:00", "seconds": 780, "artist": "Mahmut Orhan & Neşe Karaböcek", "title": "Yali (Extended Mix)", "layers": [] },
+      { "at": "17:51", "seconds": 1071, "artist": "Tom & Collins", "title": "Tu Es Tout (Extended Mix)", "layers": [] },
+      { "at": "22:10", "seconds": 1330, "artist": "Kotiēr", "title": "Smalltown Boy", "layers": [] },
+      { "at": "26:15", "seconds": 1575, "artist": "DvirNuns & Dox", "title": "Pecado", "layers": [] },
+      { "at": "34:30", "seconds": 2070, "artist": "Mahmut Orhan & Dromstone ft. Botan", "title": "The Summit", "layers": [] },
+      {
+        "at": "38:40",
+        "seconds": 2320,
+        "artist": "Mahmut Orhan & Franc Fala & Roland Clark",
+        "title": "Deeper",
+        "layers": [{ "artist": "Roland Clark", "title": "What the F**k (Acapella)" }]
+      },
+      { "at": "42:40", "seconds": 2560, "artist": "Maxi Meraki & Mahmut Orhan & Vanilla Ice", "title": "Ice Ice Baby 2026", "layers": [] },
+      { "at": "47:27", "seconds": 2847, "artist": "Maxi Meraki & Alexey Union & Kinky Sound ft. Catmoonk", "title": "Everybody", "layers": [] },
+      { "at": "50:30", "seconds": 3030, "artist": "Loofy & Rome Fortune", "title": "Gasoline", "layers": [] },
+      { "at": "54:16", "seconds": 3256, "artist": "Ilkay Sencan & Mahmut Orhan", "title": "Şaşkın (John Cala Remix)", "layers": [] },
+      { "at": "59:00", "seconds": 3540, "artist": "Volkoder", "title": "Move Baby", "layers": [] },
+      { "at": "1:02:21", "seconds": 3741, "artist": "Bountyhunter", "title": "Woops (Dimitri Vegas & Junkie Kid Remix)", "layers": [] },
+      { "at": "1:05:28", "seconds": 3928, "artist": "JUNTARO", "title": "Satisfied (Extended Mix)", "layers": [] },
+      { "at": "1:09:04", "seconds": 4144, "artist": "Upercent & Roland Clark", "title": "Get It Together", "layers": [] },
+      { "at": "1:15:53", "seconds": 4553, "artist": "ANOTR ft. 54 Ultra", "title": "Talk To You", "layers": [] },
+      { "at": "1:19:35", "seconds": 4775, "artist": "Gala", "title": "Freed From Desire", "layers": [] },
+      { "at": "1:22:12", "seconds": 4932, "artist": "Fred again.. & Baby Keem", "title": "leavemealone", "layers": [] },
+      { "at": "1:24:00", "seconds": 5040, "artist": "Mahmut Orhan & Felix Raphael", "title": "Three", "layers": [] }
+    ]
+  },
+  {
+    "id": "cassianvoorn",
+    "artist": "Cassian b2b Joris Voorn",
+    "place": "Tomorrowland 2026 · Weekend 2",
+    "mood": "Melodic house & techno, peak-time festival",
+    "accent": "#4A7FD4",
+    "file": "videos/Cassian b2b Joris Voorn WE2 ｜ Tomorrowland 2026.mp4",
+    "source": "whatstheid + magicsets (https://www.youtube.com/watch?v=wJj6rJ3YaB0)",
+    "tracks": [
+      { "at": "0:00", "seconds": 0, "artist": "Cassian", "title": "ID", "layers": [] },
+      { "at": "3:45", "seconds": 225, "artist": "Joris Voorn", "title": "Horizon (Eelke Kleijn Remix)", "layers": [] },
+      { "at": "6:45", "seconds": 405, "artist": "Noir & Haze", "title": "Around (Seth Hills & Victor Garde Remix)", "layers": [] },
+      { "at": "10:27", "seconds": 627, "artist": "AURAPAX", "title": "ID", "layers": [] },
+      { "at": "13:30", "seconds": 810, "artist": "Argy & SOLANCE", "title": "Window Shake", "layers": [] },
+      { "at": "16:25", "seconds": 985, "artist": "Mariz", "title": "No Past, No Future", "layers": [] },
+      { "at": "19:30", "seconds": 1170, "artist": "Cassian", "title": "SOS", "layers": [] },
+      { "at": "26:10", "seconds": 1570, "artist": "Calvin Harris ft. Clementine Douglas", "title": "Blessings (Cassian Remix)", "layers": [] },
+      { "at": "30:05", "seconds": 1805, "artist": "Tommy Farrow", "title": "Phantom (Extended Mix)", "layers": [] },
+      { "at": "32:55", "seconds": 1975, "artist": "CamelPhat & Volkoder", "title": "Unique Moment", "layers": [] },
+      { "at": "35:55", "seconds": 2155, "artist": "Khainz", "title": "Nightcreatures", "layers": [] },
+      { "at": "39:40", "seconds": 2380, "artist": "SLVR", "title": "Oh La La La", "layers": [] },
+      { "at": "45:35", "seconds": 2735, "artist": "Adam Port & Stryv ft. Malachiii", "title": "Move (Anyma & Cassian Remix)", "layers": [] },
+      {
+        "at": "49:00",
+        "seconds": 2940,
+        "artist": "deadmau5 ft. Stevie Appleton",
+        "title": "Science",
+        "layers": [{ "artist": "Roland Clark", "title": "Speak To Me (Acapella)" }]
+      },
+      { "at": "52:25", "seconds": 3145, "artist": "Cassian", "title": "Dun Dun", "layers": [] },
+      { "at": "55:25", "seconds": 3325, "artist": "Joris Voorn & Roddy Lima & Taylr Renee", "title": "Machine", "layers": [] },
+      { "at": "58:05", "seconds": 3485, "artist": "ANOTR ft. 54 Ultra", "title": "Talk To You (Eli Brown Bootleg)", "layers": [] },
+      { "at": "1:01:58", "seconds": 3718, "artist": "Xavier Rudd", "title": "Spirit Bird (Joris Voorn Remix)", "layers": [] },
+      { "at": "1:05:10", "seconds": 3910, "artist": "Kevin de Vries & Cassian", "title": "Payback", "layers": [] },
+      { "at": "1:09:20", "seconds": 4160, "artist": "MGMT", "title": "Kids (ANNA Edit)", "layers": [] },
+      { "at": "1:13:45", "seconds": 4425, "artist": "Cassian & AR/CO", "title": "Come To Life", "layers": [] },
+      { "at": "1:17:08", "seconds": 4628, "artist": "Joris Voorn & Goodboys", "title": "Utopia (Korolova Remix)", "layers": [] },
+      { "at": "1:20:45", "seconds": 4845, "artist": "John Summit & HAYLA", "title": "Shiver (Cassian Remix)", "layers": [] },
+      {
+        "at": "1:24:08",
+        "seconds": 5048,
+        "artist": "ID",
+        "title": "ID",
+        "layers": [{ "artist": "Shakedown", "title": "At Night (Acapella)" }]
+      },
+      { "at": "1:27:15", "seconds": 5235, "artist": "Cassian & Yotto & Da Hool", "title": "Love Parade", "layers": [] }
+    ]
   }
 ];

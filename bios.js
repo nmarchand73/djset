@@ -675,4 +675,79 @@ window.BIOS = {
   kolscheiffel: { aliasOf: "kolsch" },
   kolschtl17: { aliasOf: "kolsch" },
   kolschwinter: { aliasOf: "kolsch" },
+  mahmutorhan: {
+    name: "Mahmut Orhan",
+    role: "DJ & producteur · Ultra Records",
+    origin: "Bursa · Istanbul",
+    active: "depuis 2011",
+    labels: ["Ultra Records", "Ultra Music"],
+    tags: ["deep house", "nu-disco", "oriental"],
+    lead: "Producteur turc d’Ultra Records : cordes anatoliennes, grooves house et tubes méditerranéens — de Feel à Pangea, jusqu’aux mainstages Tomorrowland.",
+    body: [
+      "Né le 11 janvier 1993 à Bursa, Mahmut Orhan commence la musique vers quinze ans. À Istanbul dès 2011, il travaille d’abord en coulisses de clubs (Bebek) avant de passer derrière les platines. Première sortie progressive : Undesirable Life (2011). Les années suivantes, collaborations avec Boral Kibil et Deeperise, puis un virage vers les mélodies à cordes et les voix — Herneise (2014) annonce déjà la signature « eastern vibes ».",
+      "Age of Emotions (2015), construit autour d’un sample de violon de Canbaz, percute Beatport (Nu Disco). L’année suivante, Feel avec Sena Şener explose : hit iTunes, Shazam Global, millions de vues — et signature chez Ultra Records via Patrick Moxey. Orhan résume sa formule : nu-disco mixé aux couleurs du Levant. Save Me (ft. Eneli, 2017) et le remix Game of Thrones prolongent la vague.",
+      "6 Days (2018), remix de Six Day War de Colonel Bagshot (déjà samplé par DJ Shadow), devient un monstre européen — n°1 en Grèce, Serbie, Roumanie, Bulgarie. Suivent les collaborations avec Irina Rimes (Schhh, Hero, Nu Vreau), Sofi Tukker (Forgive Me, 2022), Selin, Drumstone. Orhan enchaîne festivals : Exit, Untold, Ultra, Coachella, Tomorrowland.",
+      "En mars 2024 sort Pangea, premier album Ultra : dix titres (Redemption, Ederlezi, Nighter ft. TUANA, Andalusian ft. Ribale Wehbe, Kettle’s Up ft. Botan…) pensés comme un continent musical — voix turques, libanaises, berlinoises, rock indie. Le live suit : Freedom Stage Tomorrowland 2025, puis Crystal Garden Weekend 2 en 2026, où le deep house oriental rencontre les edits festival (Ice Ice Baby 2026, Freed From Desire, Fred again..).",
+      "Figure majeure de l’export électronique turc, Orhan tient un équilibre rare : radio internationale sans lâcher les textures anatoliennes, boîtes Ultra sans diluer le groove. Bursa → Istanbul → le monde — une ligne droite tirée au violon."
+    ],
+    albums: [
+      { title: "Feel (ft. Sena Şener)", year: "2016", note: "Ultra · tube fondateur", url: "https://www.youtube.com/watch?v=rQ7tMWOCQlM" },
+      { title: "6 Days (with Colonel Bagshot)", year: "2018", note: "Ultra · hit européen", url: "https://www.youtube.com/watch?v=1W5BA0lDVLM" },
+      { title: "Save Me (ft. Eneli)", year: "2017", note: "Ultra", url: "https://www.youtube.com/watch?v=FZ_paWpT9Mo" },
+      { title: "Fly Above (ft. Sena Şener)", year: "2021", note: "Ultra", url: "https://www.youtube.com/watch?v=hLfZXb_Ug6o" },
+      { title: "Pangea", year: "2024", note: "Ultra · premier album" }
+    ],
+    sets: [
+      {
+        title: "Tomorrowland 2026 · Crystal Garden · WE2",
+        year: "2026",
+        note: "Set Horizon",
+        url: "https://www.youtube.com/watch?v=phd2kGcZjVA"
+      },
+      {
+        title: "Tomorrowland 2025 · Freedom · WE1",
+        year: "2025",
+        note: "Freedom Stage · tracklist 1001",
+        url: "https://www.1001tracklists.com/tracklist/1rhx1dft/mahmut-orhan-freedom-stage-tomorrowland-weekend-1-belgium-2025-07-19.html"
+      }
+    ]
+  },
+  cassianvoorn: {
+    name: "Cassian b2b Joris Voorn",
+    role: "Melodic house & techno · Afterlife × Spectrum",
+    origin: "Sydney / Los Angeles · Tilburg / Amsterdam",
+    active: "Cassian depuis ~2009 · Voorn depuis ~2002",
+    labels: ["Afterlife", "Rose Avenue", "Spectrum", "Armada", "Green", "Rejected"],
+    tags: ["melodic techno", "melodic house", "festival", "b2b"],
+    lead: "Un Australien Grammy (mix RÜFÜS DU SOL / Afterlife) face à un pilier d’Amsterdam (Green, Rejected, Spectrum) — melodic peak-time au long cours.",
+    body: [
+      "Cassian Stewart-Kasimba naît à Sydney, piano dès cinq ans, guitare et groupes au lycée, puis électro avant même d’avoir l’âge des clubs — nourri par Modular (Cut Copy, Van She). Premières sorties dès 2009 (Friday Night, Bang Gang). Nurvous, Club Sweat, Sweat It Out! : il affine un blend house / electro / techno mélodique. Know U Well (2017) devient un classique streamé ; Lafayette inaugure Rose Avenue (label RÜFÜS DU SOL). L’album Laps (2020) pose l’artiste à Los Angeles.",
+      "En studio, Cassian est aussi ingénieur de mix : nomination Grammy pour Underwater (RÜFÜS DU SOL), puis Grammy Best Dance/Electronic Recording pour Alive (2022). Il mixe Anyma, John Summit, Dom Dolla, Adriatique… et devient musical director du show Anyma à la Sphere (Las Vegas). Côté discographie solo : Aran, Dun Dun (Afterlife, 2024), SOS, Come To Life — un pied ferme dans la famille Tale of Us.",
+      "Joris Voorn (né le 25 février 1977 à Tilburg), fils de compositeur et de prof de musique, perce avec Muted Trax puis Lost Memories ; Incident (2004) tourne chez Carl Cox, Derrick May, Laurent Garnier. Albums : Future History, From A Deep Place, Nobody Knows (album électronique de l’année Billboard 2014), Four (2019), Serotonin (Spectrum / Armada, 2025). Labels Green et Rejected avec Edwin Oosterwal, puis Spectrum — radio, events (Gashouder, Ultra Miami), esthétique melodic house & techno.",
+      "Leurs sets respectifs croisent déjà : Payback (Kevin de Vries & Cassian), Horizon / Utopia (Voorn), edits festival. Le b2b Tomorrowland 2026 WE2 superpose Afterlife voltage (Dun Dun, Move Anyma & Cassian, Shiver Cassian Remix) et Spectrum storytelling (Spirit Bird, Machine, Utopia Korolova) jusqu’à Love Parade avec Yotto & Da Hool.",
+      "Deux générations du melodic festival : l’un vient du studio australien et des Grammys, l’autre de vingt ans d’Amsterdam underground. Ensemble, un b2b qui refuse le shortcut — builds propres, IDs, et hymnes qui collent au mainstage."
+    ],
+    albums: [
+      { title: "Laps", year: "2020", note: "Cassian · Rose Avenue" },
+      { title: "Dun Dun", year: "2024", note: "Cassian · Afterlife", url: "https://www.youtube.com/watch?v=nNFFYIFTyU8" },
+      { title: "Nobody Knows", year: "2014", note: "Joris Voorn · Green" },
+      { title: "Four", year: "2019", note: "Joris Voorn · Spectrum" },
+      { title: "Serotonin", year: "2025", note: "Joris Voorn · Spectrum / Armada" },
+      { title: "Incident", year: "2004", note: "Joris Voorn · Lost Memories Pt. 2", url: "https://www.youtube.com/watch?v=osavObqP-5w" }
+    ],
+    sets: [
+      {
+        title: "Tomorrowland 2026 · WE2 (b2b)",
+        year: "2026",
+        note: "Set Horizon",
+        url: "https://www.youtube.com/watch?v=wJj6rJ3YaB0"
+      },
+      {
+        title: "DGTL · Tomorrow into Utopia",
+        year: "2025",
+        note: "Joris Voorn",
+        url: "https://www.youtube.com/watch?v=KOtbr0aoYkU"
+      }
+    ]
+  },
 };
